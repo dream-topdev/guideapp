@@ -1,0 +1,20 @@
+{
+  "name": "guideapp",
+  "version": "1.0.0",
+  "description": "guide app",
+  "main": "index.js",
+  "devDependencies": {
+    "electron": "^9.1.1",
+    "electron-builder": "^22.7.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"pack": "electron-builder --dir",
+	"dist": "electron-builder",
+	"postinstall": "electron-builder install-app-deps",
+	"build": "electron-builder build"
+  },
+  "author": "",
+  "license": "ISC"
+}
